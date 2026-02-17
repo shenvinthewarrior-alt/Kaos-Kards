@@ -14,7 +14,8 @@ playerDeck = [
     actionCards.shield,
     actionCards.shield,
     actionCards.shield,
-    
+    //actionCards.evade,
+	
     actionCards.slash,
     actionCards.slash,
     actionCards.slash,

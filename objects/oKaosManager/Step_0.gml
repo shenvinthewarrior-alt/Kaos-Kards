@@ -1,6 +1,5 @@
 ///@desc Check Health
 
-
 //Someone Died
 if global.playerHp <= 0 or global.enemyHp <= 0
 {

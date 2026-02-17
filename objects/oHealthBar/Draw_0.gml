@@ -28,6 +28,7 @@ draw_sprite_general(sprite_index,4,_xPos,_yPos,_hpValue,_spriteHeight,_newX,_new
 image_xscale, image_yscale, angle, image_blend, image_blend, image_blend, image_blend, image_alpha);
 
 //Create Mask
+
 var _maskXOffset = 5;
 var _maskYOffset = 30;
 if !surface_exists(barMask) then barMask = surface_create(_spriteWidth+_maskXOffset,sprite_height);

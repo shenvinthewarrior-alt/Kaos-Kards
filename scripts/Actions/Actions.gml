@@ -205,3 +205,12 @@ function actionReckless(_targetEnemy)
         card : self.id,
     });
 }
+
+function actionEvade(_targetEnemy)
+{
+	instance_create_layer(x,y,"Attacks",oEvasion,{
+        value : value,
+        card : self.id,
+        targetEnemy : _targetEnemy
+    });
+}

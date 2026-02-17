@@ -63,6 +63,9 @@ actionCards = {
     "Deal high damage to the enemy, but take a small amount of recoil damage",
     sCardPunch,[5,9],CARDACT_GENRES.ATTACK,actionReckless),
     
+	evade : new createCardAction("evasion",
+    "Fousing enemy attack to dodge like phantom assassin for once.",
+    sCardShield,[1,10],CARDACT_GENRES.DEFEND,actionEvade),
 };
 
 
