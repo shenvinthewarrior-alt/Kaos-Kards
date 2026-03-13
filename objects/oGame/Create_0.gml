@@ -1,4 +1,6 @@
 #region Initialize Info
+//Rng setter
+global.value_set_once = false
 
 initDeck();
 initActionCards();

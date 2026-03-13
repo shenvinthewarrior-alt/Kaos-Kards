@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"OG_PRNG",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"OG_PRNG",
+  "parent":{
+    "name":"PRNG",
+    "path":"folders/Scripts/PRNG.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

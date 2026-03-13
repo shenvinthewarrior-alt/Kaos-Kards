@@ -1,4 +1,5 @@
 //Move To Target Pos
+
 x = lerp(x,targetX,.2);
 y = lerp(y,targetY,.2);
 
@@ -28,3 +29,14 @@ hover = touchingMouse() and canGrab and !instance_exists(oTipBox) and oKaosManag
 
 //Draw Info
 drawCardText(card.info);
+
+//Creating global variable once again because of kaos card
+if (global.value_set_once == false) && (card.value != undefined)
+{
+global.SilenceRng = OG_prng_create(min(card.value*5,100),5)
+global.value_set_once = true
+}
+else if (global.value_set_once == false) && (card.value == undefined)
+{
+	global.SilenceRng = noone
+}

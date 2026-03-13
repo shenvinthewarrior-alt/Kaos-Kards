@@ -200,7 +200,7 @@ function actionSteak(_targetEnemy)
 function actionSilence(_targetEnemy)
 {
     //No Hit
-    if irandom_range(2,20) < min(value,20)
+    if OG_prng_roll(global.SilenceRng) //irandom_range(2,20) < min(value,20)
     {
         effectTextSprite(x,_targetEnemy ? bbox_top : bbox_bottom,sNope);
         cardShake();

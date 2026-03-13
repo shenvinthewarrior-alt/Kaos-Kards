@@ -1,5 +1,4 @@
 ///@desc Setup Card
-
 //Set Sprite
 sprite_index = card.info.sprite;
 
@@ -27,6 +26,16 @@ value = card.value != undefined ? ceil(card.value*global.valueMult) : undefined;
 if struct_exists(card.info,"genre") and card.info.genre == CARDACT_GENRES.ATTACK and value != undefined
 {
 	value = ceil(value*VALUE_MULT);
+}
+//Creating global variable once
+if (global.value_set_once == false) && (card.value != undefined)
+{
+global.SilenceRng = OG_prng_create(min(card.value*5,100),5)
+global.value_set_once = true
+}
+else if (global.value_set_once == false) && (card.value == undefined)
+{
+	global.SilenceRng = noone
 }
 
 //Action

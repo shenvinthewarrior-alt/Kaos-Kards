@@ -1,4 +1,6 @@
 //Visual
+//Rng Manager
+
 flipSprite = false; //If The Sprite Should Flip Based on The Target
 posBasedOnCard = false; //If The Attack Offset is Diffrent Based on The Target
 newYPos = [card.bbox_top,card.bbox_bottom]; //[targetEnemy,targetPlayer];
